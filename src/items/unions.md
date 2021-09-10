@@ -69,7 +69,7 @@ unsafe {
 
 Writes to [`Copy`] or [`ManuallyDrop`][ManuallyDrop] union fields do not
 require reads for running destructors, so these writes don't have to be placed
-in `unsafe` blocks
+in `unsafe` blocks:
 
 ```rust
 # use std::mem::ManuallyDrop;
